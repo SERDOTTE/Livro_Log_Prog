@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora do Peso Ideal</title>
+    <link rel="stylesheet" href="/cap04/style/calc_peso_ideal.css" />
+    <script src="/cap04/scripts/cal_peso_ideal.js" defer></script>
+  </head>
+  <body>
+    <h1>Programa de Calculo do Peso Ideal:</h1>
+    <div class="container">
+      <img src="images/balanca.webp" alt="balança" />
+      <form class="form">
+        <p>
+          Nome:
+          <input type="text" name="nome" id="inNome" required />
+        </p>
+        <p>
+          Sexo:
+          <input class="sexo_opc" type="radio" name="sexo" id="inMasculino" required />
+          <label for="inMasculino">Masculino</label>
+          <input class="sexo_opc" type="radio" name="sexo" id="inFeminino" required />
+          <label for="inFeminino">Feminino</label>
+        </p>
+        <p>
+          Altura (m):
+          <input
+            type="number"
+            name="altura"
+            id="inAltura"
+            min="0.1"
+            max="2.5"
+            step="0.01"
+            required
+          />
+        </p>
+        <input class="botao"  type="submit" value="Calcular peso ideal" />
+        <input class="botao" type="reset" value="Limpar Campos" />
+
+        <h3></h3>
+      </form>
+  
+    </div>
+    <footer>
+      <p>🎮 Rodrigo Serdotte Freitas 🎮 <br> Brazil</p>
+    </footer>
+  </body>
+</html>

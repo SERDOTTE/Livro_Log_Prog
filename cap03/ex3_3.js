@@ -1,0 +1,10 @@
+const promptpt = require('prompt-sync')();
+const salario = Number(promptpt("Qual o salário? "));
+const anos = Number(promptpt("Quantos anos? "));
+const quadrienios = Math.floor(anos / 4);
+const acrescimo = salario * 0.01 * quadrienios;
+const salarioFinal = salario + acrescimo;
+console.log(`Salário inicial: R$ ${salario.toFixed(2)}`);
+console.log(`Tempo (anos): R$ ${anos.toFixed(2)}`);
+console.log(`Quadrienios: ${quadrienios}`);
+console.log(`Salário final: R$ ${salarioFinal.toFixed(2)}`);

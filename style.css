@@ -1,0 +1,124 @@
+/* Reset de estilo para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo geral do body */
+body {
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+body::before {
+    background-image: url("img/code.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #0b1239;
+    border: 1px solid #ccced4;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container__informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__texto h2 {
+    font-size: 1.5rem;
+    color: #fffefe;
+    margin-bottom: 10px;
+}
+
+/* Estilizando imagem */
+.container__informacoes img {
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+/* Estilo das divs de desafios */
+.container__desafio {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #0b1239;
+    color: #fffefe;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container__desafio h1 {
+    font-size: 1.5rem;
+    color: #fafafa;
+    margin-bottom: 10px;
+}
+
+.container__desafio p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.container__desafio input {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 20px); /* Ajusta o input para não ultrapassar os limites */
+    max-width: 80px; /* Limita o tamanho máximo do input */
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.container__botao {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container__botao:disabled {
+    background-color: #ccc;
+    cursor: not-allowed; /* Indica que o botão está desativado */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
